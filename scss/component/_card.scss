@@ -1,0 +1,14 @@
+.work-card:hover {
+    .hidden {
+        overflow: hidden;
+    }
+
+    img {
+        transform: scale(1.05);
+        transition: all .45s;
+    }
+
+    p {
+        text-decoration: underline;
+    }
+}

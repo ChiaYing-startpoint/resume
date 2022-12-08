@@ -1,0 +1,47 @@
+$font-48: 48px;
+$font-32: 32px;
+$font-20: 20px;
+$font-18: 18px;
+
+li{
+    list-style: none !important;
+}
+h1,h2,h3,h4,h5,p,ul{
+    margin-bottom: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+p{
+    letter-spacing: 0.02em;
+       
+}
+.cus-boxshadow{
+   box-shadow: 2px 2px 30px 3px rgb(0 0 0 / 5%);
+   
+}
+.sticky-top {
+    top: 16px;
+}
+h3 {
+    font-size: $font-32;
+    font-weight: 700 !important;
+    @include iphone{
+        span{
+            margin-top: 8px;
+        display: block;
+        }
+    }
+}
+
+.cus-badge {
+    background: rgba($secondary, .15);
+    font-weight: 500;
+}
+.footer-icon:hover{
+    i{
+        color: $primary;
+    }
+    
+}

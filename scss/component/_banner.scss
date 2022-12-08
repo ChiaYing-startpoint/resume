@@ -1,0 +1,115 @@
+.work-banner {
+    @include iphone{
+        margin-top: 72px;
+    }
+    height: 90vh !important;
+    .container {
+        position: relative;
+    }
+    h2 {
+        font-size: $font-48;
+        @include iphone{
+            font-size: $font-32;
+        }
+    }
+    h3 {
+        font-size: $font-20;
+        line-height: 2.3rem;
+        .cus-span{
+            
+            @include iphone{
+                margin-top: 0px !important;
+                display: block;
+            }
+        }
+        @include iphone {
+                font-size: $font-18;
+            }
+    }
+}
+.cicle-1 {
+    top: 10%;
+    left: 15%;
+    position: absolute;
+    border-radius: 100%;
+    animation: ani1 5s infinite;
+    animation-timing-function: ease;
+}
+.cicle-2 {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top:20%;
+    right: 15%;
+    border-radius: 100%;
+    transition: all .45s;
+    animation: ani3 4s infinite;
+    animation-timing-function: ease;
+    
+}
+.cicle-3 {
+    width: 48px;
+    height: 48px;
+    background: $primary;
+    position: absolute;
+    right: 30%;
+    border-radius: 100%;
+    transition: all .45s;
+    animation: ani2 2s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+// 動畫開始
+@keyframes ani1 {
+    0%{
+        box-shadow: 0 0 0px 0px rgba($primary, .1);
+        width: 100px;
+        height: 100px;
+    }
+    
+    50%{
+        box-shadow: 0 0 15px 8px rgba($primary, .25);
+        width: 100px;
+        height: 100px;
+    }
+    
+    100%{
+        box-shadow: 0 0 0px 0px rgba($primary, .1);
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@keyframes ani2{
+    0% {
+        bottom: 15%;
+        
+    }
+
+    50% {
+        bottom: 12%;
+    }
+
+    100% {
+        bottom: 15%;
+    }
+}
+
+@keyframes ani3 {
+    0% {
+        transform: scale(1, 1);
+        border: 10px solid rgba($secondary, .1);
+
+    }
+
+    50% {
+        transform: scale(0.9, 0.9);
+        border: 0px solid rgba($secondary, .1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+        border: 10px solid rgba($secondary, .1);
+    }
+}
+// 動畫結束
